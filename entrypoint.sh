@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+print(os.getenv('INPUT_GITHUB-ACTION-GIT-EMAIL'))
+print(os.getenv('INPUT_GITHUB-ACTION-GIT-USERNAME'))
 echo "gh email ${INPUT_GITHUB-ACTION-GIT-EMAIL}"
 echo "gh username ${INPUT_GITHUB-ACTION-GIT-USERNAME}"
 
