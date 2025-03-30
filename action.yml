@@ -4,6 +4,9 @@ inputs:
   github-action-git-email:
     description: 'The email used in the release information'
     required: true
+  github-action-test-var:
+    description: 'The username used in the release information'
+    required: true
   github-action-git-username:
     description: 'The username used in the release information'
     required: true
