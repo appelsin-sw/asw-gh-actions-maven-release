@@ -11,5 +11,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.github-action-test-var }}
     - ${{ inputs.github-action-git-email }}
     - ${{ inputs.github-action-git-username }}
