@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 
 if [[ -z "${INPUT_GITHUB-ACTION-GIT-EMAIL}" ]]; then
