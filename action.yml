@@ -14,8 +14,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    INPUT_GITHUB-ACTION-GIT-EMAIL: ${{ inputs.github-action-test-var }}
-    INPUT_GITHUB-ACTION-GIT-USERNAME: ${{ inputs.github-action-git-username }}
+    GIT_EMAIL: ${{ inputs.github-action-test-var }}
+    GIT_USERNAME: ${{ inputs.github-action-git-username }}
   args:
     - ${{ inputs.github-action-test-var }}
     - ${{ inputs.github-action-git-email }}

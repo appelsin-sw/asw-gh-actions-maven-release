@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Hello $1"
-echo "gh email ${INPUT_GITHUB-ACTION-GIT-EMAIL}"
-echo "gh username ${INPUT_GITHUB-ACTION-GIT-USERNAME}"
+echo "gh email ${GIT_EMAIL}"
+echo "gh username ${GIT_USERNAME}"
 
 if [[ -z "${INPUT_GITHUB-ACTION-GIT-EMAIL}" ]]; then
   echo "::error::The parameter \"github-action-git-email\" is mandatory"
