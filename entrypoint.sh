@@ -2,6 +2,7 @@
 
 java -version
 echo "---------"
+echo "${JAVA_HOME}"
 mvn -version
 echo "---------"
 git --version
