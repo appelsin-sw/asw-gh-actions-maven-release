@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Hello $1"
 echo "gh email ${INPUT_GITHUB-ACTION-GIT-EMAIL}"
 echo "gh username ${INPUT_GITHUB-ACTION-GIT-USERNAME}"
 
