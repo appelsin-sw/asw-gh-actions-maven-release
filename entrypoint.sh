@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo "Hello $1"
-echo "gh email ${GIT_EMAIL}"
-echo "gh username ${GIT_USERNAME}"
-
-if [[ -z "${INPUT_GITHUB-ACTION-GIT-EMAIL}" ]]; then
+if [[ -z "${GIT_EMAIL}" ]]; then
   echo "::error::The parameter \"github-action-git-email\" is mandatory"
   exit 1
 fi
-if [[ -z "${INPUT_GITHUB-ACTION-GIT-USERNAME}" ]]; then
+if [[ -z "${GIT_USERNAME}" ]]; then
   echo "::error::The parameter \"github-action-git-username\" is mandatory"
+  exit 1
+fi
+if [[ -z "${GIT_SSH_KEY}" ]]; then
+  echo "::error::The parameter \"github-action-git-ssh-key\" is mandatory"
   exit 1
 fi
 

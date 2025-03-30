@@ -4,9 +4,6 @@ inputs:
   github-action-git-email:
     description: 'The email used in the release information'
     required: true
-  github-action-test-var:
-    description: 'The username used in the release information'
-    required: true
   github-action-git-username:
     description: 'The username used in the release information'
     required: true
@@ -14,9 +11,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    GIT_EMAIL: ${{ inputs.github-action-test-var }}
+    GIT_EMAIL: ${{ inputs.github-action-git-email }}
     GIT_USERNAME: ${{ inputs.github-action-git-username }}
-  args:
-    - ${{ inputs.github-action-test-var }}
-    - ${{ inputs.github-action-git-email }}
-    - ${{ inputs.github-action-git-username }}
