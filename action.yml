@@ -1,0 +1,15 @@
+name: 'Maven release'
+description: 'Create a release of a maven project, using a .next_version file to describe versioning information'
+inputs:
+  github-action-git-email:
+    description: 'The email used in the release information'
+    required: true
+  github-action-git-username:
+    description: 'The username used in the release information'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github-action-git-email }}
+    - ${{ inputs.github-action-git-username }}
